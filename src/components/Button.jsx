@@ -9,7 +9,7 @@ const Button = () => {
       onClick={() => (window.location.href = "./navigation-pages/contact.html")}
       onMouseEnter={() => setAnimate(true)}
       onAnimationEnd={() => setAnimate(false)}
-      className="flex items-center justify-between px-4 py-2 rounded-full bg-neutral-900 text-neutral-200 font-medium text-lg"
+      className="flex items-center justify-between px-4 py-2 rounded-full bg-neutral-900 text-neutral-200 font-medium text-lg h-fit w-fit"
     >
       <p className="text-base font-bold">Get In Touch</p>
       <div className="ml-3 h-9 w-9 flex items-center justify-center rounded-full bg-white border border-neutral-900 overflow-hidden">

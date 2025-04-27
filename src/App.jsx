@@ -6,16 +6,18 @@ import ProductGrid from './components/products'
 import CareSection from './components/CareSection'
 import TestimonialCarousel from './components/TestimonialCarousel'
 import Footer from './components/Footer'
+import ProductHero from './components/ProductHero'
 
 const App = () => {
   return (
     <>
       {/* <Button/> */}
-      <Hero/>
       <Navbar/>
+      <Hero/>
       <ProductGrid/>
       <CareSection/>
       <TestimonialCarousel/>
+      <ProductHero/>
       <ProductGrid/>
       <Footer/>
     </>
