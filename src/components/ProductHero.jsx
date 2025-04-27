@@ -6,7 +6,7 @@ const ProductHero = () => {
         <section className="w-full px-4 md:px-24 py-8">
         <div className="relative rounded-2xl overflow-hidden h-[400px] md:h-[800px]">
             <img
-            src="/src/assets/ProductHero.jpg" // Replace with your image path
+            src="../assets/ProductHero.jpg" // Replace with your image path
             alt="Glowradiance Tablet"
             className="w-full h-full object-cover"
             />
