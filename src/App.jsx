@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from './components/button'
+// import Button from './components/button'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import ProductGrid from './components/products'
