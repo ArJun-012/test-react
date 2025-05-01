@@ -1,26 +1,19 @@
 import React from 'react'
-// import Button from './components/button'
-import Hero from './components/Hero'
-import Navbar from './components/Navbar'
-import ProductGrid from './components/products'
-import CareSection from './components/CareSection'
-import TestimonialCarousel from './components/TestimonialCarousel'
-import Footer from './components/Footer'
-import ProductHero from './components/ProductHero'
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import HomeStore from './Pages/HomeStore'
+import ProductStore from './Pages/ProductStore'
+import Sidebar from './components/Sidebar'
 
 const App = () => {
   return (
-    <>
-      {/* <Button/> */}
-      <Navbar/>
-      <Hero/>
-      <ProductGrid/>
-      <CareSection/>
-      <TestimonialCarousel/>
-      <ProductHero/>
-      <ProductGrid/>
-      <Footer/>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomeStore />} />
+        <Route path="/product" element={<ProductStore />} />
+        <Route path="/sidebar" element={<Sidebar />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

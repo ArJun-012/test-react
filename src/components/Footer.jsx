@@ -82,7 +82,8 @@ const Footer = () => {
         </div>
 
         {/* Bottom */}
-        <div className="flex flex-col md:flex-row justify-between items-center text-gray-600 text-sm mt-10 border-t pt-4">
+        <div 
+            className="flex flex-col md:flex-row justify-between items-center text-gray-600 text-sm mt-10 border-t pt-4 px-6 md:px-7">
             <div className="flex items-center space-x-2">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="green" className="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 12.75l-1.5-1.5m0 0l1.5-1.5m-1.5 1.5h9m-6 3.75v.75m0 3.75v.75m0-11.25v.75m0 3.75v.75m-3.75 3.75h.75m3.75 0h.75m-7.5 0h.75m7.5 0h.75M3.75 3.75h16.5v16.5H3.75V3.75z" />

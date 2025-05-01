@@ -14,9 +14,9 @@ export default function Navbar() {
 
       {/* Desktop Nav */}
       <ul className="hidden md:flex gap-6 text-gray-700 font-medium">
-        <li className="text-green-800">Home</li>
-        <li className="cursor-pointer" onClick={() => (window.location.href = "./Button.jsx")}>About</li>
-        <li>Shop</li>
+        <li className="text-green-800 cursor-pointer" onClick={() => (window.location.href = "/")}>Home</li>
+        <li className="cursor-pointer hover:text-green-800" onClick={() => (window.location.href = "/product")}>Shop</li>
+        <li className="cursor-pointer" onClick={() => (window.location.href = "../Pages/ProductStore.jsx")}>About</li>
         <li className="relative group">
           Pages
           <div className="absolute top-6 left-0 w-28 p-2 bg-white border rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity">
@@ -47,9 +47,9 @@ export default function Navbar() {
       {isMobileMenuOpen && (
         <div className="absolute top-[60px] left-0 w-full bg-gradient-to-b from-[#fffffc] to-[#fcffef] shadow-md md:hidden rounded-b-3xl py-8 px-6">
           <ul className="flex flex-col items-start gap-4 p-4 text-gray-700 font-medium">
-            <li className="text-green-800">Home</li>
-            <li>About</li>
-            <li>Shop</li>
+            <li className="text-green-800 cursor-pointer" onClick={() => (window.location.href = "/")}>Home</li>
+            <li className="cursor-pointer hover:text-green-800" onClick={() => (window.location.href = "/product")}>Shop</li>
+            <li className="cursor-pointer" onClick={() => (window.location.href = "/about")}>About</li>
             <li>
               <details className="w-full">
                 <summary className="cursor-pointer">Pages</summary>
