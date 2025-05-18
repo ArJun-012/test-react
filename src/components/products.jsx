@@ -61,13 +61,14 @@ const products = [
     return (
         <section className="py-12 px-5 sm:px-8 lg:px-24">
         <h2 className="text-3xl font-bold text-gray-800 mb-8">
-            Recent <span className="text-green-600">products</span>
+            Recent <span className="text-blue-500">products</span>
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
             {products.map((product) => (
             <div
                 key={product.id}
                 className="bg-white p-4 rounded-2xl shadow-md hover:shadow-xl transition relative overflow-hidden"
+                onClick={() => (window.location.href = `/product/${product.id}`)}
             >
                 <div className="relative w-full h-96 mb-4">
                 <img
