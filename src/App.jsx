@@ -11,6 +11,12 @@ import Doctors from './Pages/Doctors'
 import Contact from './Pages/Contact'
 import Appoinments from './Pages/Appoinments'
 import OtpTest from './components/OtpTest'
+import PaymentGateway from './Pages/PaymentGateway'
+import DoctorProfile from './Pages/DoctorProfile'
+import Chatbot from './Pages/chatbot'
+import UserDashboard from './components/userdash'
+import AppointmentMap from './components/AppointmentMap'
+import AdminLanding from './Admin/Pages/AdminLanding'
 
 
 const App = () => {
@@ -28,6 +34,12 @@ const App = () => {
         <Route path="/sidebar" element={<Sidebar />} />
         <Route path="/product/:id" element={<ProductDetailsPage/>} />
         <Route path="/otptest" element={<OtpTest/>} />
+        <Route path="/payment" element={<PaymentGateway/>} />
+        <Route path="/doctor" element={<DoctorProfile/>} />
+        <Route path="/chatbot" element={<Chatbot/>} />
+        <Route path="/map" element={<UserDashboard/>} />
+        <Route path="/appoinmentmap" element={<AppointmentMap/>} />
+        <Route path="/admin" element={<AdminLanding/>} />
       </Routes>
     </BrowserRouter>
   )
