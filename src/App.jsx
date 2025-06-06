@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, BrowserRouter, Route, Routes } from 'react-router-dom'
 import HomeStore from './Pages/HomeStore'
 import ProductStore from './Pages/ProductStore'
 import Sidebar from './components/Sidebar'
@@ -17,6 +17,8 @@ import Chatbot from './Pages/chatbot'
 import UserDashboard from './components/userdash'
 import AppointmentMap from './components/AppointmentMap'
 import AdminLanding from './Admin/Pages/AdminLanding'
+import StoreManageAdmin from './Admin/Pages/StoreManageAdmin'
+import ClinicManageAdmin from './Admin/Pages/ClinicManageAdmin'
 
 
 const App = () => {
@@ -39,7 +41,9 @@ const App = () => {
         <Route path="/chatbot" element={<Chatbot/>} />
         <Route path="/map" element={<UserDashboard/>} />
         <Route path="/appoinmentmap" element={<AppointmentMap/>} />
-        <Route path="/admin" element={<AdminLanding/>} />
+        <Route path="/admin/home" element={<AdminLanding/>} />
+        <Route path="/admin/store" element={<StoreManageAdmin/>} />
+        <Route path="/admin/clinics" element={<ClinicManageAdmin/>} />
       </Routes>
     </BrowserRouter>
   )
