@@ -6,7 +6,7 @@ const AdminLanding = () => {
   return (
     <div className="flex min-h-screen bg-gray-100">
       {/* Sidebar - 20% width */}
-      <div className="w-0 md:w-1/5">
+      <div className="w-0 md:w-1/5 lg:w-1/4">
         <Sidebar/>
       </div>
 

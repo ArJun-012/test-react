@@ -19,6 +19,10 @@ import AppointmentMap from './components/AppointmentMap'
 import AdminLanding from './Admin/Pages/AdminLanding'
 import StoreManageAdmin from './Admin/Pages/StoreManageAdmin'
 import ClinicManageAdmin from './Admin/Pages/ClinicManageAdmin'
+import ProductDetails from './Admin/Components/ProductDetails'
+import ProductManageAdmin from './Admin/Pages/ProductManageAdmin'
+import AppointmentForm from './components/doctors/AppointmentForm'
+import AppointmentManageAdmin from './Admin/Pages/AppointmentManageAdmin'
 
 
 const App = () => {
@@ -44,6 +48,10 @@ const App = () => {
         <Route path="/admin/home" element={<AdminLanding/>} />
         <Route path="/admin/store" element={<StoreManageAdmin/>} />
         <Route path="/admin/clinics" element={<ClinicManageAdmin/>} />
+        <Route path="/admin/products" element={<ProductManageAdmin/>} />
+        <Route path="/admin/appointments" element={<AppointmentManageAdmin/>} />
+        <Route path="/appointment" element={<AppointmentForm/>} />
+
       </Routes>
     </BrowserRouter>
   )

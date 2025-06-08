@@ -1,9 +1,8 @@
 import React from 'react'
+import AppointmentDetails from '../Components/AppoinmentDetails'
 import Sidebar from '../Components/AdminSidebar'
-import ClinicManagement from '../Components/ClinicManagement'
 
-
-const ClinicManageAdmin = () => {
+const AppointmentManageAdmin = () => {
     return (
         <div className="flex min-h-screen bg-gray-100">
         {/* Sidebar - 20% width */}
@@ -13,10 +12,10 @@ const ClinicManageAdmin = () => {
 
             {/* Main Content - 80% width */}
             <div className="w-full md:w-4/5">
-                <ClinicManagement />
+                <AppointmentDetails />
             </div>
         </div>
     )
 }
 
-export default ClinicManageAdmin
+export default AppointmentManageAdmin
