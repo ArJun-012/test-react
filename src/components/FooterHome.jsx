@@ -8,7 +8,7 @@ const FooterHome = () => {
             {/* Logo + Description */}
             <div className="md:col-span-1">
                 <div className="flex items-center gap-2 mb-3">
-                    <img src="/src/assets/Curevo-logo.png" alt="vaxet logo" className="h-8 w-auto" />
+                    <img src="/src/assets/Curevo-logo.png" alt="Curevo logo" className="h-8 w-auto" />
                 </div>
                 <p className="text-gray-600">
                     Curevo is designed to bridge the gap between

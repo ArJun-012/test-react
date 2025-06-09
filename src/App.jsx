@@ -13,7 +13,6 @@ import Appoinments from './Pages/Appoinments'
 import OtpTest from './components/OtpTest'
 import PaymentGateway from './Pages/PaymentGateway'
 import DoctorProfile from './Pages/DoctorProfile'
-import Chatbot from './Pages/chatbot'
 import UserDashboard from './components/userdash'
 import AppointmentMap from './components/AppointmentMap'
 import AdminLanding from './Admin/Pages/AdminLanding'
@@ -23,6 +22,7 @@ import ProductDetails from './Admin/Components/ProductDetails'
 import ProductManageAdmin from './Admin/Pages/ProductManageAdmin'
 import AppointmentForm from './components/doctors/AppointmentForm'
 import AppointmentManageAdmin from './Admin/Pages/AppointmentManageAdmin'
+import ChatbotLauncher from './Pages/ChatbotLauncher'
 
 
 const App = () => {
@@ -42,7 +42,7 @@ const App = () => {
         <Route path="/otptest" element={<OtpTest/>} />
         <Route path="/payment" element={<PaymentGateway/>} />
         <Route path="/doctor" element={<DoctorProfile/>} />
-        <Route path="/chatbot" element={<Chatbot/>} />
+        <Route path="/chatbot" element={<ChatbotLauncher/>} />
         <Route path="/map" element={<UserDashboard/>} />
         <Route path="/appoinmentmap" element={<AppointmentMap/>} />
         <Route path="/admin/home" element={<AdminLanding/>} />
